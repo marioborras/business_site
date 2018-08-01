@@ -130,6 +130,7 @@ body {
   font-weight: normal;
   position: fixed;
   width: 70%;
+  max-width: 400px;
   left: 20%;
 }
 .modal-text {
