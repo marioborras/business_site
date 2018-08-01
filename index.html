@@ -1,40 +1,113 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-    <script src="main.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Time Based Modal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+
 </head>
+
 <body>
-        <div id="modal" class="modal"> <span class="modal-text">Get it here first</span>
-            <span id="close-button" onClick="onclickx()">&times;</span>
-            <p>Sign up now for up-to-the-minute offers,sales and news.</p>
-            <input class="customer" type="text" placeholder="Enter your email address">
-            <br><br>
-            <input class="submit" type="submit" value="Submit">
-         </div>
-    <div .header></div><h1>Crate&Barrel</h1></div>
-    <div .list>
-        <ul>
-            <li>Furniture</li>
-            <li>Outdoor</li>
-            <li>Kitchen</li>
-            <li>Decor</li>
-            <li>Rugs</li>
-            <li>Bed & Bath</li>
-            <li>Lighting</li>
-        </ul>
-    </div>
-    <div class="random">
-        <div>
-           <p>Welcome to Crate & Barrel</p>  
+  <div class="navbar">
+    <div class="nav-container" id="navCon">
+      <div class="social-icons">
+
+      </div>
+      <div class="logo" id="logo-div">
+        Crate&Barrel
+      </div>
+      <div class="menu-icon">
+        <div id="menu-button" onclick="onClickOpen()">
+          <i class="fas fa-bars fa-2x"></i>
+          <p id="menu-text">Menu</p>
+
         </div>
-       
+        <div id="close" onclick="onClickClose()">&times;</div>
+      </div>
+      <div class="search-bar">
+
+
+      </div>
+
+      <div class="nav-items">
+        <ul id="dropdown">
+          <li>
+            <a href="#">Furniture</a>
+          </li>
+          <li>
+            <a href="#">Outdoor</a>
+          </li>
+          <li>
+            <a href="#">Tabletop & Bar</a>
+          </li>
+          <li>
+            <a href="#">Kitchen</a>
+          </li>
+          <li>
+            <a href="#">Decor</a>
+          </li>
+
+          <li>
+            <a href="#">Rugs</a>
+          </li>
+          <li>
+            <a href="#">Bed & Bath</a>
+          </li>
+          <li>
+            <a href="#">Lighting</a>
+          </li>
+          <li>
+            <a href="#">Crate&
+              <span id="blue">Kids</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="sale">Sale</a>
+          </li>
+          <li>
+            <a href="#">Holiday & Gifts</a>
+          </li>
+          <li>
+            <a href="#">Inspiration</a>
+          </li>
+          <li>
+            <a href="#">Design Services</a>
+          </li>
+          <li>
+            <a href="#">Gift Registry</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    
-   
+  </div>
+  <div id="modal" class="modal">
+    <span class="modal-text">Get it here first</span>
+    <span id="close-button" onClick="onclickx()">&times;</span>
+    <p>Sign up now for up-to-the-minute offers,sales and news.</p>
+    <input class="customer" type="text" placeholder="Enter your email address">
+    <br>
+    <br>
+    <input class="submit" type="submit" value="Submit">
+  </div>
+  <div class="photo-section">
+    <div class="main-img">
+      <img src="cb_d_HP_20180727_ModFurnPromo.jpg" alt="">
+    </div>
+  </div>
+  <div class="photo-collection">
+    <img src="https://source.unsplash.com/300x300/?people,woman" alt="" class="collection">
+    <img src="https://source.unsplash.com/300x300/?home,water" alt="" class="collection">
+    <img src="https://source.unsplash.com/300x300/?automobile,bike" alt="" class="collection">
+    <img src="https://source.unsplash.com/300x300/?nature,fire" alt="" class="collection">
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
